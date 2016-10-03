@@ -1,0 +1,20 @@
+{
+  "name": "Calculatrice",
+  "version": "1.0.0",
+  "description": "petite calculatrice gentille",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fabien-Verges/Calculatrice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fabien-Verges/Calculatrice/issues"
+  },
+  "homepage": "https://github.com/Fabien-Verges/Calculatrice#readme"
+}
