@@ -1,0 +1,59 @@
+body{
+  background-image: url(../images/wall.jpg);
+  background-repeat: no-repeat;
+
+}
+
+#calculatrice{
+
+  margin-left: 20%;
+  margin-top: 100px;
+  border: 2px solid #645E5E;
+  border-radius: 2%;
+  background: linear-gradient(to bottom right, white, grey);
+  width: 250px;
+  height: 230px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.ecran{
+  font: 30px arial, sans-serif;
+  color: yellow;
+  text-align: right;
+  line-height:40px; /* centrage vertical */
+  background-color: #445E4E;
+  margin-top: 5px;
+  margin-left: 5%;;
+  margin-bottom: 5px;
+  width: 90%;
+  height: 40px;
+  border: 1px solid black;
+  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+  padding-right: 2px;
+}
+
+#boutons{
+  width: 98%;
+}
+
+.bouton{
+  font: 20px impact, sans-serif;
+  box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to top left, white, grey);
+  width: 20%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 2%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 8px;
+  text-align:center;
+  border-radius: 10%;
+  cursor:  pointer;
+  line-height:30px; /* centrage vertical */
+  text-align:center;
+}
+
+.bouton:active{
+  box-shadow: none;
+}
