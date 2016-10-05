@@ -1,12 +1,13 @@
 body{
   background-image: url(../images/wall.jpg);
   background-repeat: no-repeat;
-
+  text-align: center;
 }
 
 #calculatrice{
 
-  margin-left: 20%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 100px;
   border: 2px solid #645E5E;
   border-radius: 2%;

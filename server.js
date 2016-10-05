@@ -2,6 +2,10 @@ const express = require('express');
 
 const server = express();
 
+//fonctions
+const arrondi = (nombre) => Math.round(1000000 * nombre) / 1000000;
+
+
 //routes
 server.get('/', (request, response) =>{
 	response.sendFile(`/home/fabien/workspace/Calculatrice/index.html`);
@@ -10,28 +14,28 @@ server.get('/', (request, response) =>{
 server.get('/add/:a&:b', (request, response) => {
   const a = request.params.a;
   const b = request.params.b;
-	const res = (parseInt(a, 10) + parseInt(b, 10)).toString();
+	const res = arrondi((parseFloat(a, 10) + parseFloat(b, 10))).toString();
   response.send(res);
 });
 
 server.get('/sub/:a&:b', (request, response) => {
   const a = request.params.a;
   const b = request.params.b;
-	const res = (parseInt(a, 10) - parseInt(b, 10)).toString();
+	const res = arrondi((parseFloat(a, 10) - parseFloat(b, 10))).toString();
   response.send(res);
 });
 
 server.get('/mult/:a&:b', (request, response) => {
   const a = request.params.a;
   const b = request.params.b;
-	const res = (parseInt(a, 10) * parseInt(b, 10)).toString();
+	const res = arrondi((parseFloat(a, 10) * parseFloat(b, 10))).toString();
   response.send(res);
 });
 
 server.get('/div/:a&:b', (request, response) => {
   const a = request.params.a;
   const b = request.params.b;
-	const res = (parseInt(a, 10) / parseInt(b, 10)).toString();
+	const res = arrondi((parseFloat(a, 10) / parseFloat(b, 10))).toString();
   response.send(res);
 });
 
