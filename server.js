@@ -8,7 +8,7 @@ const arrondi = (nombre) => Math.round(1000000 * nombre) / 1000000;
 
 // routes
 server.get('/', (request, response) => {
-  response.sendFile('/home/fabien/workspace/Calculatrice/index.html');
+  response.sendFile(`${__dirname}/index.html`);
 });
 
 server.get('/status', (req, res) => {
