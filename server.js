@@ -1,7 +1,7 @@
 const express = require('express');
 
 const server = express();
-
+const port = process.env.PORT || 8050;
 // fonctions
 const arrondi = (nombre) => Math.round(1000000 * nombre) / 1000000;
 
@@ -9,6 +9,10 @@ const arrondi = (nombre) => Math.round(1000000 * nombre) / 1000000;
 // routes
 server.get('/', (request, response) => {
   response.sendFile('/home/fabien/workspace/Calculatrice/index.html');
+});
+
+server.get('/status', (req, res) => {
+  res.send({ status: 'OK' });
 });
 
 server.get('/add/:a&:b', (request, response) => {
@@ -41,6 +45,7 @@ server.get('/div/:a&:b', (request, response) => {
 
 server.use(express.static('./'));	// pour utiliser les fichiers du dossier courant (css, images)
 
-//mise en route du serveur
-console.log(`Démmarage du serveur sur le port 8050...`)
-server.listen(8050);
+// mise en route du serveur
+server.listen(port, () => {
+  console.log(`Démmarage du serveur sur le port ${port}...`);
+});
