@@ -2,7 +2,7 @@
  * Déclaration de l'application demoApp
  */
 
-import utils from './utils'
+ import angular from 'angular';
 
  const app = angular.module('calculatrice', []);
  app.controller('calcCtrl', ($scope, $http) => {
